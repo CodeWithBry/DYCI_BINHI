@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+:root {
+  /* Primary Colors (DYCI + BINHI-inspired) */
+  --primary: #004aad;            /* DYCI Blue */
+  --primary-light: #3d7be5;      
+  --primary-dark: #00357d;
+
+  /* Earthy + Museum tone */
+  --accent-earth: #c8a97e;       /* Wood / Museum shelf color */
+  --accent-sand: #f5e8ce;        /* Light heritage-paper color */
+  --accent-clay: #a47449;        /* Rustic tone */
+
+  /* Background */
+  --bg-main: #ffffff;            /* Clean white */
+  --bg-soft: #f3f4f6;            /* Subtle gray */
+  --bg-paper: #faf3e0;           /* Old-paper theme for history pages */
+
+  /* Text */
+  --text-dark: #1a1a1a;
+  --text-medium: #4a4a4a;
+  --text-light: #6f6f6f;
+
+  /* Shadows & Borders */
+  --shadow-card: 0 4px 12px rgba(0,0,0,0.12);
+  --border-soft: 1px solid #e0e0e0;
+
+  /* Interactive Elements */
+  --highlight: #ffd93d;           /* Attention color for infographics */
+  --interactive-hover: #eaf2ff;   /* Soft blue hover */
+
+  --font: "Lato", sans-serif;
+  --font-title: "Roboto Mono", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+button {
+    border-radius: 7.5px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button:hover {
+    opacity: .8;
+    scale: 1.004;
+}
+
+button:active {
+    opacity: .6;
+    scale: .905;
+    transition: all .13s ease;
+}
+
+li {
+    text-decoration: none;
+    list-style: none;
+    transition: all .3s ease;
+}
+
+a {
+    color:  inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}

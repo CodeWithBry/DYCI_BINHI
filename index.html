@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://kit.fontawesome.com/a076d05399.js' />
+    <link rel="stylesheet" href="./styles_components/nav.css">
+    <link rel="stylesheet" href="./styles_components/hero.css">
+    <link rel="stylesheet" href="./styles_components/about_binhi.css">
+    <link rel="stylesheet" href="./styles_components/memorabilia.css">
+    <link rel="stylesheet" href="./styles_components/sto_nino.css">
+    <link rel="stylesheet" href="./styles_components/pagoda_paintings.css">
+    <link rel="stylesheet" href="./styles_components/history.css">
+    <link rel="stylesheet" href="./styles_components/heritage-sites.css">
+    <link rel="stylesheet" href="./styles_components/facts.css">
+    <link rel="stylesheet" href="./styles_components/research.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DYCI BINHI</title>
+</head>
+
+<body>
+    <div class="contents">
+        <nav class="nav">
+            <div class="top">
+                <div class="web-title">
+                    <img src="./files/logo.png" alt="logo">
+                    <h1 id="title">DYCI-BINHI</h1>
+                </div>
+                <div class="tabs-container">
+                    <div class="web-title">
+                        <img src="./files/logo.png" alt="logo">
+                        <h1 id="title">B.I.N.H.I</h1>
+                        <button id="close-side-bar">
+                            <i class="	fa fa-close"></i>
+                        </button>
+                    </div>
+                    <ul class="tabs">
+                        <a class="tab highlight" href="#home"><i class="fas fa-home	"></i> Home</a>
+                        <a class="tab" href="#binhi"> <i class="fas fa-seedling"></i> BINHI</a>
+                        <a class="tab" href="#history"><i class="fas fa-history"></i> History</a>
+                        <a class="tab" href="#heritage-sites"><i class="fas fa-sitemap"></i> Heritage Sites</a>
+                        <a class="tab" href="#facts"><i class="	fas fa-check"></i> Facts</a>
+                        <a class="tab" href="#research"><i class="fas fa-search"></i> Research</a>
+                        <a class="tab" href="#memorabilia"><i class="fas fa-memory"></i> Memorabilia</a>
+                        <a class="tab" href="#sto-nino"><i class="fas fa-church"></i> Sto. Nino</a>
+                        <a class="tab" href="#pagoda-paintings"><i class="	fas fa-paint-brush"></i> Pagoda Paintings</a>
+                    </ul>
+                </div>
+                <div class="auth">
+                    <button id="hamburger-button">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-section section" id="home">
+            <div class="top-contents">
+                <h1 id="strong-text">
+                    Welcome To The DYCI BINHI Museum
+                </h1>
+                <p id="paragraph">
+                    Welcome to the DYCI BINHI Museum, a digital space dedicated to preserving and celebrating the rich
+                    heritage of Bocaue, Bulacan. Explore the stories, traditions, and cultural treasures that shaped our
+                    river town—from its historic landmarks to its cherished festivals.
+                </p>
+                <a href="#binhi">Explore Now <i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="bottom-contents">
+                <div class="images">
+                    <img class="hide-image-preview" src="./files/FRONT.png" alt="brochure-front">
+                    <div class="image-divs" onclick="hideImagePreview(0, true)"></div>
+                    <img src="./files/FRONT.png" alt="brochure-front" onclick="hideImagePreview(0, false)">
+                </div>
+                <div class="images">
+                    <img class="hide-image-preview" src="./files/BACK.png" alt="brochure-back">
+                    <div class="image-divs" onclick="hideImagePreview(1, true)"></div>
+                    <img src="./files/BACK.png" alt="brochure-back" onclick="hideImagePreview(1, false)">
+                </div>
+            </div>
+        </div>
+
+        <div class="about-binhi section" id="binhi">
+            <div class="left">
+                <div class="container">
+                    <h1 id="question">What is DYCI BINHI?</h1>
+                    <p id="binhi-description">
+                        DYCI-BINHI is an Interactive Learning Center for Bocauenos that envisions to provide a deeper
+                        understanding and appreciation of the history, religiosity, arts and the culture of our beloved
+                        town
+                        of Bocaue, Bulacan. BINHI stands for "Bocaue Institute for history and Information."
+                    </p>
+                    <a href="#history">History <i class="fa fa-arrow-down"></i></a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="./files/binhi.jpg" alt="binhi">
+            </div>
+        </div>
+
+        <div class="history section" id="history">
+            <div class="left">
+                <img src="./files/History/History.jpg" alt="sto-nino-image">
+            </div>
+            <div class="right">
+                <div class="container">
+                    <h1 id="question">Tracing the Past, Understanding the Present</h1>
+                    <p id="binhi-description">
+                        The history section presents the significant events, stories, and milestones that shaped Bocaue
+                        and its people. By exploring these narratives, visitors gain a deeper understanding of the
+                        community’s journey through time.
+                    </p>
+                    <a href="#heritage-sites">Heritage Sites <i class="fa fa-arrow-down"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="heritage-sites section" id="heritage-sites">
+            <div class="left">
+                <div class="container">
+                    <h1 id="question">Landmarks of Living History</h1>
+                    <p id="binhi-description">
+                        Bocaue’s heritage sites are enduring witnesses of faith, tradition, and resilience. This section
+                        highlights historically significant locations that continue to shape the cultural landscape of
+                        the town.
+                    </p>
+                    <a href="#facts">Facts <i class="fa fa-arrow-down"></i></a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="images-container">
+                    <img src="./files/HeritageSites/heritage1.jpg" class="image">
+                    <img src="./files/HeritageSites/heritage2.jpg" class="image">
+                    <img src="./files/HeritageSites/heritage3.jpg" class="image">
+                    <img src="./files/HeritageSites/heritage4.jpg" class="image">
+                    <img src="./files/HeritageSites/heritage5.jpg" class="image">
+                    <button class="swipeButton buttLeft">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+                    <button class="swipeButton buttRight">
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="indicators">
+                    <button class="indicator focused"></button>
+                    <button class="indicator"></button>
+                    <button class="indicator"></button>
+                    <button class="indicator"></button>
+                    <button class="indicator"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="facts section" id="facts">
+            <div class="left">
+                <div class="container">
+                    <h1 id="question">Stories in Every Detail</h1>
+                    <p id="binhi-description">
+                        Discover interesting facts and lesser-known information about Bocaue’s history, culture, and
+                        traditions. These details reveal how everyday life contributes to the town’s rich historical
+                        identity.
+                    </p>
+                    <a href="#research">Research <i class="fa fa-arrow-down"></i></a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="images-container">
+                    <img src="./files/Facts/IMG_20251203_094102.jpg" class="image">
+                    <img src="./files/Facts/IMG_20251203_143208.jpg" class="image">
+                    <button class="swipeButton buttLeft">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+                    <button class="swipeButton buttRight">
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="indicators">
+                    <button class="indicator focused"></button>
+                    <button class="indicator"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="research section" id="research">
+            <div class="left">
+                <div class="container">
+                    <h1 id="question">Building Knowledge Through Historical Inquiry</h1>
+                    <p id="binhi-description">
+                        The research section showcases documented studies, records, and scholarly works related to local
+                        history and culture. BINHI supports academic exploration to ensure that heritage is preserved
+                        through credible and well-grounded research.
+                    </p>
+                    <a href="#memorabilia">Memorabilia <i class="fa fa-arrow-down"></i></a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="images-container">
+                    <img src="./files/Research/research1.jpg" class="image">
+                    <img src="./files/Research/research2.jpg" class="image">
+                    <button class="swipeButton buttLeft">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+                    <button class="swipeButton buttRight">
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="indicators">
+                    <button class="indicator focused"></button>
+                    <button class="indicator"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="memorabilia section" id="memorabilia">
+            <div class="left">
+                <div class="container">
+                    <h1 id="question">Founder of the DYCI.</h1>
+                    <p id="binhi-description">
+                        The Memorabilia Collection of DYCI-BINHI showcases a curated selection of artifacts, documents,
+                        photographs, and personal items that reflect the milestones of Dr. Yanga’s Colleges, Inc. and
+                        the rich heritage of Bocaue. Each piece serves as a tangible reminder of the people, traditions,
+                        achievements, and historical moments that shaped the institution and the community.
+                    </p>
+                    <a href="#sto-nino">Sto-Nino <i class="fa fa-arrow-down"></i></a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="images-container">
+                    <img src="./files/Memorabilia/IMG_20251203_133426.jpg" class="image">
+                    <img src="./files/Memorabilia/IMG_20251203_133447.jpg" class="image">
+                    <img src="./files/Memorabilia/IMG_20251203_133501.jpg" class="image">
+                    <button class="swipeButton buttLeft">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+                    <button class="swipeButton buttRight">
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="indicators">
+                    <button class="indicator focused"></button>
+                    <button class="indicator"></button>
+                    <button class="indicator"></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sto-nino section" id="sto-nino">
+            <div class="left">
+                <img src="./files/Sto-Nino/IMG_20251204_080906.jpg" alt="sto-nino-image">
+            </div>
+            <div class="right">
+                <div class="container">
+                    <h1 id="question">Sto. Niño of DYCI BINHI</h1>
+                    <p id="binhi-description">
+                        The Sto. Niño of DYCI BINHI represents one of the most cherished symbols of faith and cultural
+                        heritage within the school community. It highlights the deep devotion of Dynans to the Holy
+                        Child, reflecting values of humility, hope, and guidance. Through the Sto. Niño display, the
+                        BINHI Museum preserves a meaningful part of DYCI’s traditions, reminding visitors of the
+                        school’s long-standing connection to spirituality and Filipino identity.
+                    </p>
+                    <a href="#pagoda-paintings">Pagoda Paintings <i class="fa fa-arrow-down"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagoda-paintings section" id="pagoda-paintings">
+            <div class="left">
+                <div class="container">
+                    <h1 id="question">DYCI BINHI's Pagoda Paintings.</h1>
+                    <p id="binhi-description">
+                        The Pagoda Paintings at DYCI BINHI showcase the rich cultural heritage and artistic traditions
+                        of our community. Each painting captures the unique architecture, vibrant colors, and intricate
+                        details of the pagodas, reflecting both history and creativity. Visitors can appreciate how
+                        these artworks preserve local stories and celebrate the beauty of Filipino artistry.
+                    </p>
+                    <a href="#home">Back to Top <i class="fa fa-arrow-up"></i></a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="images-container">
+                    <img src="./files/Paintings/IMG_20251203_133547.jpg" class="image">
+                    <img src="./files/Paintings/IMG_20251203_133603.jpg" class="image">
+                    <img src="./files/Paintings/IMG_20251203_133612.jpg" class="image">
+                    <img src="./files/Paintings/IMG_20251203_133634.jpg" class="image">
+                    <button class="swipeButton buttLeft">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+                    <button class="swipeButton buttRight">
+                        <i class="fa fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="indicators">
+                    <button class="indicator focused"></button>
+                    <button class="indicator"></button>
+                    <button class="indicator"></button>
+                    <button class="indicator"></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="./scripts/pageComponents.js" crossorigin="anonymous"></script>
+    <script type="module" src="./scripts/memorabilia.js" crossorigin="anonymous"></script>
+    <script type="module" src="./scripts/navigation.js" crossorigin="anonymous"></script>
+    <script type="module" src="./scripts/windowScroll.js" crossorigin="anonymous"></script>
+    <script type="module" src="./scripts/pagodaPaintings.js" crossorigin="anonymous"></script>
+    <script type="module" src="./scripts/heritageSites.js" crossorigin="anonymous"></script>
+    <script type="module" src="./scripts/research.js" crossorigin="anonymous"></script>
+    <script type="module" src="./scripts/facts.js" crossorigin="anonymous"></script>
+    <script src="./scripts/imagePreview.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+.sto-nino {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* LEFT */
+
+.sto-nino .left {
+    width: 50vw;
+    min-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sto-nino .left >img {
+    width: 40vw;
+    box-shadow: 0 5px 10px -5px black;
+    border-radius: 1rem;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+}
+
+/* RIGHT */
+
+.sto-nino .right {
+    width: 50vw;
+    min-width: 700px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sto-nino .right .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 80%;
+    min-width: 400px;
+    gap: 1rem;
+}
+
+.sto-nino .right .container #question {
+    font-family: var(--font-title);
+    color: var(--primary);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.sto-nino .right .container #binhi-description {
+    font-variant: var(--font);
+    font-size: 1.25rem;
+    color: var(--text-medium);
+    margin: 0 1rem;
+}
+
+.sto-nino .right .container a {
+    width: fit-content;
+    text-wrap: nowrap;
+    scroll-snap-align: center;
+    padding: .65rem .95rem;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.sto-nino .right .container a:hover {
+    opacity: .8;
+}
+
+.sto-nino .right .container a:active {
+    opacity: .6;
+    transition: all .13s ease;
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .sto-nino {
+        width: 100vw;
+        flex-direction: column;
+        gap: 1rem;
+        height: fit-content;
+        padding: 2rem 0;
+    }
+
+    .sto-nino .left {
+        width: 90vw;
+        margin: auto;
+        display: flex;
+    }
+
+    .sto-nino .left>img {
+        width: 90vw;
+    }
+
+    /* RIGHT */
+
+    .sto-nino .right {
+        width: 100%;
+        min-width: 100vw;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .sto-nino .right .container {
+        min-width: 90vw;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .sto-nino {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

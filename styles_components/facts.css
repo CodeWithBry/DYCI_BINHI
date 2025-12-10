@@ -1,0 +1,176 @@
+.facts {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 100vh;
+}
+
+.facts .left {
+    width: 50vw;
+    min-width: 700px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.facts .left .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 80%;
+    min-width: 400px;
+    gap: 1rem;
+}
+
+.facts .left .container #question {
+    font-family: var(--font-title);
+    color: var(--primary);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.facts .left .container #binhi-description {
+    font-variant: var(--font);
+    font-size: 1.25rem;
+    color: var(--text-medium);
+    margin: 0 1rem;
+}
+
+.facts .left .container a {
+    width: fit-content;
+    text-wrap: nowrap;
+    scroll-snap-align: center;
+    padding: .65rem .95rem;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.facts .left .container a:hover {
+    opacity: .8;
+}
+
+.facts .left .container a:active {
+    opacity: .6;
+    transition: all .13s ease;
+}
+
+/* RIGHT */
+
+.facts .right {
+    width: 50vw;
+    min-width: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.facts .right .images-container {
+    width: 40vw;
+    overflow: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    position: inherit;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.facts .right .images-container>img {
+    width: 40vw;
+    box-shadow: 0 5px 10px -5px black;
+    border-radius: 1rem;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+}
+
+.facts .right .images-container .swipeButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: black;
+}
+
+.facts .right .images-container .swipeButton.leftButton {
+    left: 0;
+}
+
+.facts .right .images-container .swipeButton.rightButton {
+    right: 0;
+}
+
+.facts .right .indicators {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.facts .right .indicators .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.274);
+    border-radius: 50%;
+    scale: 1.25;
+    cursor: pointer;
+}
+
+.facts .right .indicators .focused {
+    background-color: black;
+    scale: 1.5;
+}
+
+@media (max-width: 1200px) {
+    .facts {
+        width: 100vw;
+        flex-direction: column;
+        gap: 1rem;
+        height: fit-content;
+    }
+
+    .facts .left {
+        width: 100%;
+        min-width: 100vw;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .facts .left .container {
+        min-width: 90vw;
+    }
+
+    .facts .right {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        min-width: 0;
+    }
+
+    .facts .right .images-container {
+        width: 90vw;
+    }
+
+    .facts .right .images-container>img {
+        width: 90vw;
+    }
+}

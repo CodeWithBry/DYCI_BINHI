@@ -1,0 +1,117 @@
+.about-binhi {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    background-color: white;
+    translate: 0 -2rem;
+    border-radius: 2rem 2rem 0 0;
+    z-index: -1;
+}
+
+.about-binhi .left {
+    width: 50vw;
+    min-width: 700px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-binhi .left .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    width: 80%;
+    min-width: 400px;
+    gap: 1rem;
+}
+
+.about-binhi .left .container #question {
+    font-family: var(--font-title);
+    color: var(--primary);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.about-binhi .left .container #binhi-description {
+    font-variant: var(--font);
+    font-size: 1.25rem;
+    color: var(--text-medium);
+    margin: 0 1rem;
+}
+
+.about-binhi .left .container a {
+    width: fit-content;
+    text-wrap: nowrap;
+    scroll-snap-align: center;
+    padding: .65rem .95rem;
+    color: var(--text-light);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.about-binhi .left .container a:hover {
+    opacity: .8;
+}
+
+.about-binhi .left .container a:active {
+    opacity: .6;
+    transition: all .13s ease;
+}
+
+/* RIGHT */
+
+.about-binhi .right {
+    width: 50vw;
+    min-width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-binhi .right>img {
+    width: 40vw;
+    box-shadow: 0 5px 10px -5px black;
+    border-radius: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .about-binhi {
+        width: 100vw;
+        flex-direction: column;
+        gap: 1rem;
+        height: fit-content;
+    }
+
+    .about-binhi .left {
+        width: 100%;
+        min-width: 100vw;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .about-binhi .left .container {
+        min-width: 90vw;
+    }
+
+    .about-binhi .right {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        min-width: 0;
+    }
+
+    .about-binhi .right>img {
+        width: 90vw;
+    }
+}
